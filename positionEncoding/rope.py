@@ -88,7 +88,6 @@ class RopePositionEncoder(nn.Module):
         rotated_pair = torch.stack((rotated_x1, rotated_x2), dim=-1)
 
         # flatten(-2) 合并最后两个维度：
-        #
         # [B,H,T,Dh/2,2]
         #     ↓
         # [B,H,T,Dh]
